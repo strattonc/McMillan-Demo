@@ -1,4 +1,99 @@
-// Core variables and mixins
+// BOOTSTRAP IMPORT //
 @import "bootstrap";
 
-// Global Styles
+/*!
+ * McMillan Landing Page Stylesheet
+ * Copyright 2015 Stratton Campbell
+ */
+
+// Custom Variables ****************************************** //
+	
+	//Colors
+	$mm-blue:		#00a0d3 !default;
+	$mm-red:		#ea3736 !default;
+	$mm-navy:		#061826 !default;
+	$mm-light-gray: #e8e8e9 !default;
+	$mm-gray: 		#d9d9d9 !default;
+	$mm-dark-gray:	#58595b !default;
+	$mm-divider:	#bcbcbc !default;
+
+	//Fonts
+	$nunito: 		normal 300 $font-size-base/$line-height-base "Nunito", Helvetica, Arial,  sans-serif;
+
+// Global Styles ********************************************* //
+
+// Typography ************************************************ //
+body{
+	font: $nunito;
+}
+
+p, ul li, ol li{
+	font-size: $font-size-base + 9;
+	margin: 0 0 30px 0;
+}
+
+ul li, ol li{
+	margin: 0;
+}
+
+#intro p{
+	color: $mm-navy;
+}
+
+#footer p{
+	color: #ffffff !important;
+	font-size: $font-size-base !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+	margin: 0 0 25px 0;
+}
+
+h1, h2, h3{
+	color: $mm-blue;
+}
+
+h4, h5, h6{
+	color: $mm-navy;
+	font-size: $font-size-h3;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+// Buttons *************************************************** //
+.mm-btn{
+	background-color: $mm-blue;
+	color: #fff;
+	font-size: $font-size-base + 4;
+	text-transform: uppercase;
+	line-height: 0;
+	padding: 20px;
+	border-radius: 0;	
+}
+
+// Header **************************************************** //
+#myCarousel{
+	height: 420px;
+}
+
+// Menu Navigation ******************************************* //
+
+// Hero Banner *********************************************** //
+
+// Landing Page Content ************************************** //
+#sub-foot{
+	background-color:$mm-light-gray;
+	padding-top: 60px;
+	padding-bottom: 35px;
+}
+
+// Footer **************************************************** //
+footer{
+	background-color: $mm-navy;
+}
+
+
+// Browser Specific Fixes ************************************ //
