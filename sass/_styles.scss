@@ -1,6 +1,9 @@
 // BOOTSTRAP IMPORT //
 @import "bootstrap";
 
+// FONTAWESOME IMPORT //
+@import "font-awesome/font-awesome";
+
 /*!
  * McMillan Landing Page Stylesheet
  * Copyright 2015 Stratton Campbell
@@ -27,36 +30,79 @@ body{
 	font: $nunito;
 }
 
+hr{
+	border-top: 3px solid $mm-divider;
+	margin: 30px 0;
+}
+
+strong{
+	font-weight: normal;
+}
+
 p, ul li, ol li{
 	font-size: $font-size-base + 9;
-	margin: 0 0 30px 0;
+	margin: 25px 0 15px 0;
 }
 
 ul li, ol li{
 	margin: 0;
 }
 
+ul{
+	padding-left: 23px;
+}
+
 #intro p{
 	color: $mm-navy;
 }
 
+p.description{
+	text-transform: uppercase;
+	color: #bcbcbc;
+	font-size: 16px;
+	margin: 0;
+}
+
+p.media-heading{
+	color: #00a0d3;
+	text-transform: uppercase;
+    font-weight: lighter;
+}
+
 #footer p{
 	color: #ffffff !important;
-	font-size: $font-size-base !important;
+	font-size: $font-size-base - 1!important;
 }
 
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
-	margin: 0 0 25px 0;
+	margin: 25px 0 0 0;
+	font-weight: lighter;
 }
 
 h1, h2, h3{
 	color: $mm-blue;
 }
 
+#hero h1{
+	color: #ffffff;
+	text-align: left;
+}
+
 h4, h5, h6{
 	color: $mm-navy;
 	font-size: $font-size-h3;
+}
+
+h2:before{
+	content: "\f04b";
+	position: absolute;
+	width: auto;
+	height: auto;
+	font-family: "FontAwesome";
+	top: 25px;
+    left: -35px;
+	color: $mm-red;
 }
 
 .uppercase{
@@ -70,13 +116,17 @@ h4, h5, h6{
 	font-size: $font-size-base + 4;
 	text-transform: uppercase;
 	line-height: 0;
-	padding: 20px;
-	border-radius: 0;	
+	padding: 25px 30px;
+	border-radius: 0;
+	font-weight: lighter;	
 }
 
 // Header **************************************************** //
 #myCarousel{
 	height: 420px;
+}
+.carousel-caption{
+	text-align: left;
 }
 
 // Menu Navigation ******************************************* //
@@ -86,13 +136,50 @@ h4, h5, h6{
 // Landing Page Content ************************************** //
 #sub-foot{
 	background-color:$mm-light-gray;
-	padding-top: 60px;
+	padding-top: 30px;
 	padding-bottom: 35px;
 }
+
+#intro{
+
+}
+
+.pdf-file{
+
+}
+
+.pdf-file img{
+
+}
+
+.pdf-file a{
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	font-size: 16px;
+	margin: auto;
+}
+
+.pdf-file:hover{
+	background-color: $mm-gray;
+}
+
+.media{
+	margin: 25px 0 15px 0;
+}
+
+.media:first-child{
+	margin-top: 25px;
+}
+
+
+
 
 // Footer **************************************************** //
 footer{
 	background-color: $mm-navy;
+	padding: 50px 0 80px 0;
 }
 
 
