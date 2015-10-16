@@ -7890,6 +7890,12 @@ h2:before {
   padding-top: 30px;
   padding-bottom: 35px; }
 
+#intro .btn {
+  margin-right: 24px; }
+
+#intro .btn:last-child {
+  margin-right: 0; }
+
 .pdf-file a {
   display: block;
   text-transform: uppercase;
@@ -7910,3 +7916,8 @@ h2:before {
 footer {
   background-color: #061826;
   padding: 50px 0 80px 0; }
+
+.social img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px; }
