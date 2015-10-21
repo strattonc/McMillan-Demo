@@ -32,7 +32,7 @@ body{
 
 hr{
 	border-top: 3px solid $mm-divider;
-	margin: 30px 0;
+	margin: 0;
 }
 
 strong{
@@ -41,7 +41,10 @@ strong{
 
 p, ul li, ol li{
 	font-size: $font-size-base + 9;
-	margin: 25px 0 15px 0;
+	margin: 0 0 25px 0;
+}
+p:last-child{
+	margin-bottom: 0;
 }
 
 ul li, ol li{
@@ -50,6 +53,7 @@ ul li, ol li{
 
 ul{
 	padding-left: 23px;
+	margin-bottom: 25px;
 }
 
 #intro p{
@@ -76,8 +80,8 @@ p.media-heading{
 
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
-	margin: 25px 0 0 0;
 	font-weight: lighter;
+	margin-bottom: 25px;
 }
 
 h1, h2, h3{
@@ -91,7 +95,7 @@ h1, h2, h3{
 
 h4, h5, h6{
 	color: $mm-navy;
-	font-size: $font-size-h3;
+	font-size: $font-size-h4;
 }
 
 h2:before{
@@ -100,9 +104,10 @@ h2:before{
 	width: auto;
 	height: auto;
 	font-family: "FontAwesome";
-	top: 25px;
-    left: -35px;
-	color: $mm-red;
+    top: 30px;
+    left: -20px;
+    color: $mm-red;
+    font-size: 24px;
 }
 
 .uppercase{
@@ -133,7 +138,58 @@ h2:before{
 
 // Hero Banner *********************************************** //
 
+
+.parallax {
+  height: 420px;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
+
+.pattern{
+	background: url("../images/hero-pattern.png") no-repeat;
+	position: absolute;
+	width: 924px;
+	height: 420px;
+	background-attachment: fixed;
+	z-index: 49;
+}
+.parallax h1 {
+  color: #fff;
+  font-size: $font-size-h1;
+  padding: 8%;
+  position: relative;
+  z-index: 99;
+}
+.parallax h1:before{
+	content: "\f04b";
+	position: absolute;
+	width: auto;
+	height: auto;
+	font-family: "FontAwesome";
+    color: $mm-red;
+    font-size: 50px;
+    z-index: 100;
+    left: 35px;
+    top: 90px;
+}
+
+.parallax-1 {
+  background-image: url("../images/hero1-banner.jpg");
+}
+
+
 // Landing Page Content ************************************** //
+section{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
 #sub-foot{
 	background-color:$mm-light-gray;
 	padding-top: 30px;
@@ -154,12 +210,18 @@ h2:before{
 }
 
 .pdf-file{
+	box-sizing: border-box;
+    padding: 3% 5%;
+}
 
+.pdf-file p{
+	font-size: 18px;
 }
 
 .pdf-file img{
-
+	margin-bottom: 15px;
 }
+
 
 .pdf-file a{
 	display: block;
@@ -174,16 +236,56 @@ h2:before{
 	background-color: $mm-gray;
 }
 
+.carousel{
+	margin-bottom: 25px;
+}
+
+.carousel-control{
+	color: #58595b;
+}
+.carousel-control.right{
+	right: -100px;
+}
+
+.carousel-control.left{
+	left: -100px;
+}
+
+.right-arrow{
+	content: url("../images/rgt-arrow.svg");
+	width: 29px;
+	height: 60px;
+	margin-top: 60%;
+
+}
+.left-arrow{
+	content: url("../images/lft-arrow.svg");
+	width: 29px;
+	height: 60px;
+	margin-top: 60%;
+
+}
+
 .media{
 	margin: 25px 0 15px 0;
 }
 
 .media:first-child{
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 
+.media .mm-btn{
+	display: table;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
+#sub-foot{
+	padding-top: 60px;
+	padding-bottom: 85px;
+}
 
 // Footer **************************************************** //
 footer{
