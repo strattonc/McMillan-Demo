@@ -7925,8 +7925,8 @@ h2:before {
   color: #ea3736;
   font-size: 50px;
   z-index: 100;
-  left: 35px;
-  top: 90px; }
+  padding-left: 3%;
+  padding-top: 5%; }
 
 .parallax-1 {
   background-image: url("../images/hero1-banner.jpg"); }
@@ -8009,7 +8009,10 @@ section {
 
 footer {
   background-color: #061826;
-  padding: 50px 0 80px 0; }
+  padding: 40px 0 80px 0; }
+
+.social {
+  margin-bottom: 40px; }
 
 .social img {
   width: 28px;
