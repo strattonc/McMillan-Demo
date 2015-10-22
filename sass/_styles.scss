@@ -189,6 +189,10 @@ h2:before{
   background-image: url("../images/hero1-banner.jpg");
 }
 
+.parallax_2 {
+  background-image: url("../images/hero2-banner.jpg");
+}
+
 
 // Landing Page Content ************************************** //
 section{
@@ -301,6 +305,10 @@ section{
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.hero2{
+	margin-bottom: 0;
 }
 
 #sub-foot{

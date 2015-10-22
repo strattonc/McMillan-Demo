@@ -7935,6 +7935,9 @@ h2:before {
 .parallax_1 {
   background-image: url("../images/hero1-banner.jpg"); }
 
+.parallax_2 {
+  background-image: url("../images/hero2-banner.jpg"); }
+
 section {
   padding-top: 45px;
   padding-bottom: 45px; }
@@ -8018,6 +8021,9 @@ section {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.hero2 {
+  margin-bottom: 0; }
 
 #sub-foot {
   padding-top: 60px;
