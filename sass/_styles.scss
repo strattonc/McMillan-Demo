@@ -23,7 +23,6 @@
 	//Fonts
 	$nunito: 		normal 300 $font-size-base/$line-height-base "Nunito", Helvetica, Arial,  sans-serif;
 
-// Global Styles ********************************************* //
 
 // Typography ************************************************ //
 body{
@@ -55,6 +54,11 @@ ul{
 	padding-left: 23px;
 	margin-bottom: 25px;
 }
+
+.clear{
+	margin: 20px 0;	
+	display: table;
+	}
 
 #intro p{
 	color: $mm-navy;
@@ -104,8 +108,9 @@ h2:before{
 	width: auto;
 	height: auto;
 	font-family: "FontAwesome";
-    top: 30px;
-    left: -20px;
+    margin-left: -30px;
+    margin-top: 8px;
+    display: flex;
     color: $mm-red;
     font-size: 24px;
 }
@@ -157,14 +162,13 @@ h2:before{
 	width: 924px;
 	height: 420px;
 	background-attachment: fixed;
-	z-index: 49;
 }
 .parallax h1 {
   color: #fff;
   font-size: $font-size-h1;
   padding: 8%;
   position: relative;
-  z-index: 99;
+
 }
 .parallax h1:before{
 	content: "\f04b";
@@ -175,11 +179,13 @@ h2:before{
     color: $mm-red;
     font-size: 50px;
     z-index: 100;
-    padding-left: 3%;
-    padding-top: 5%;
+    margin-left: -50px;
+    margin-top: 5px;
+    display: flex;
+
 }
 
-.parallax-1 {
+.parallax_1 {
   background-image: url("../images/hero1-banner.jpg");
 }
 
@@ -203,6 +209,8 @@ section{
 
 #intro .btn{
 	margin-right: 24px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #intro .btn:last-child{
@@ -238,6 +246,7 @@ section{
 
 .carousel{
 	margin-bottom: 25px;
+	z-index: 1;
 }
 
 .carousel-control{
@@ -249,6 +258,18 @@ section{
 
 .carousel-control.left{
 	left: -100px;
+}
+
+.carousel-indicators{
+	bottom:-25px;
+}
+
+.carousel-indicators .active{
+	background-color: $mm-blue;
+}
+
+.carousel-indicators li{
+	background-color: $mm-dark-gray;
 }
 
 .right-arrow{
@@ -303,3 +324,26 @@ footer{
 
 
 // Browser Specific Fixes ************************************ //
+ @media (max-width: $container-desktop) {
+ 	.parallax h1{
+ 		font-size: 58px;
+ 	}
+ 	.carousel-control.right{
+ 		right: 0;
+ 	}
+ 	.carousel-control.left{
+ 		left: 0;
+ 	}		
+ }
+ 
+ @media (max-width: $container-tablet) {
+ 	.parallax h1{
+ 		font-size: 38px;
+ 	}
+ 	.carousel-control.right{
+ 		right: 0;
+ 	}		
+ 	.carousel-control.left{
+ 		left: 0;
+ 	}	
+ }
